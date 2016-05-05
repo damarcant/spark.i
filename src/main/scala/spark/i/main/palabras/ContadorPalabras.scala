@@ -25,7 +25,7 @@ object ContadorPalabras extends App {
   //probamos la función
   println(eliminarPuntuacion("Esto es una prueba, una       simple prueba!"))
    
-  val shakespeare_texto = sc.textFile(getClass.getClassLoader.getResource("shakespeare.txt").getPath)
+  val shakespeare_texto = sc.textFile("C:\\shakespeare.txt")
   
   val shakespeareRDD_sinPuntuacion = shakespeare_texto.map(eliminarPuntuacion);
   
